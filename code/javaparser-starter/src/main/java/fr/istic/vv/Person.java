@@ -1,4 +1,4 @@
-package main.java.fr.istic.vv;
+package fr.istic.vv;
 
 class Person {
     private int age;
