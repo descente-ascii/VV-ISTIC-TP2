@@ -1,4 +1,4 @@
-package fr.istic.vv;
+package main.java.fr.istic.vv;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.*;
