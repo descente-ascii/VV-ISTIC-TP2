@@ -31,7 +31,6 @@ public class Main {
 
         SourceRoot root = new SourceRoot(file.toPath());
         FileWriter fileWriter = new FileWriter("noGetterResult.txt");
-        //PrintWriter out = new PrintWriter("noGetterResult.txt");
         PublicElementsPrinter printer = new PublicElementsPrinter(fileWriter);
         root.parse("", (localPath, absolutePath, result) -> {
             result.ifSuccessful(unit -> unit.accept(printer, null));
@@ -39,10 +38,6 @@ public class Main {
         });
         fileWriter.flush();
         fileWriter.close();
-        /*FileWriter fileWriter = new FileWriter("noGetterResult.txt");
-        PrintWriter out = new PrintWriter("noGetterResult.txt");
-        printWriter.printf(SourceRoot.Callback.Result.);
-        printWriter.close();*/
     }
 
 
